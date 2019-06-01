@@ -156,6 +156,7 @@ a:hover{
      margin-top:auto;
      margin-bottom: auto;
 
+
  }
  .leftbtn{
      left:20px;
@@ -198,6 +199,7 @@ a:hover{
      margin-left:auto;
      margin-right:auto;
      bottom:30px;
+     opacity: 0;
      
  }
 .banner1 ul a{

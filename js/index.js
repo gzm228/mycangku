@@ -127,6 +127,8 @@ window.onload=function () {
     let banner1 = document.querySelector('.banner1');
     let w = banner1img[0].offsetWidth;
     let flag = true;
+    console.log(leftbtn);
+    console.log(rightbtn);
     //向左向右式轮播图
     rightbtn[0].onclick=function(){
         if(!flag){
