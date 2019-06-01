@@ -105,6 +105,7 @@ a:hover{
     width:890px;
     height:auto;
     float:left;
+
 }
 
 .bodyLeft>.blogList{
@@ -180,7 +181,7 @@ a:hover{
 
 }
 .blogList>img{
-
+    width: 850px;
     height:600px;
     margin:0 auto  20px;
 }

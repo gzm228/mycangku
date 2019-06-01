@@ -118,23 +118,26 @@ a:hover{
 .banner .banner1{
     width:498px;
     height:298px;
-    background: #ff859d;
     border-radius:5px;
     float: left;
     margin-right: 10px;
     position:relative;
     border:1px solid #ffedb7;
+    overflow: hidden;
+
+
 
 }
 .banner1 .maomi{
-     width:498px;
-    height:298px;
-    position:absolute;
+      width:498px;
+      height:298px;
+      position:absolute;
+      left:498px;
+      top:0;
+  }
+.banner1 .maomi:first-child{
     left:0;
-    top:0;
-
-
- }
+}
 @keyframes pingyi {
     from{
         transform: translateX(0px);
@@ -216,10 +219,13 @@ a:hover{
     height:10px;
     border-radius:50%;
     margin-right:14px;
-    background:#ffa8cf;
+    background:#ffd8ff;
     float:left;
     list-style:none;
     
+}
+.banner1>.uljs>.hot{
+    background:  #ffa8cf;
 }
 .banner .banner2{
     width:368px;
