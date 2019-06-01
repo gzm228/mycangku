@@ -222,8 +222,14 @@ window.onload=function () {
     let t = setInterval(rightbtn[0].onclick,2000);
     banner1.onmouseenter =function () {
        clearInterval(t);
+        uljs[0].style.opacity=1;
+        leftbtn[0].style.opacity=1;
+        rightbtn[0].style.opacity=1;
     };
     banner1.onmouseleave=function () {
         t =setInterval(rightbtn[0].onclick,2000);
+        uljs[0].style.opacity= 0;
+        leftbtn[0].style.opacity= 0;
+        rightbtn[0].style.opacity= 0;
     };
 }
