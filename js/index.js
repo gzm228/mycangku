@@ -9,7 +9,7 @@ window.onload=function () {
 
     };
     let uljs =document.getElementsByClassName('uljs');
-    let ulpoint= uljs[0].getElementsByTagName('li');
+    let ulpoint = uljs[0].getElementsByTagName('li');
     for(let i =0;i<ulpoint.length;i++){
       // ulpoint[i].onmouseenter = function () {
       //     this.style.background='#ffa8cf';
@@ -234,4 +234,27 @@ window.onload=function () {
         leftbtn[0].style.opacity= 0;
         rightbtn[0].style.opacity= 0;
     };
+
+
+    //按需加载图片
+    //滚动的高度+窗口的高度  >=  图片距离文档的高度
+    //img.src=img.aa
+    let viewH =window.innerHeight;
+    let imgs =document.querySelectorAll('.lazyload');
+    let positions =[];
+    imgs.forEach(function (ele) {
+        let parent = ele.offsetParent;
+        positions.push(parent.offsetTop + ele.offsetTop)
+
+    });
+    window.onscroll = function () {
+        let scrolltop = document.documentElement.scrollTop;
+        for (let i =0; i<positions.length;i++){
+            if(scrolltop + viewH >=positions[i]+50){
+                if(!imgs[i].src){
+                    imgs[i].src = imgs[i].getAttribute('aa');
+                }
+            }
+        }
+    }
 }
